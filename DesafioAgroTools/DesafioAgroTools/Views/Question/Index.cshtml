@@ -1,0 +1,29 @@
+﻿@model List<Question>
+@{
+    ViewData["Title"] = "Questões";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Questões</h1>
+
+
+
+    @Html.ActionLink("Adicionar", "Create")
+
+    <table>
+        <tr>
+            <th>Questões</th>
+            <th>Acoes</th>
+        </tr>
+        @foreach (var model in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => model.Description)</td>
+                <td>@Html.ActionLink("Excluir", "DeleteQuestion", new { idQuestionary = model.Id })</td>
+            </tr>
+        }
+
+    </table>
+
+
+</div>

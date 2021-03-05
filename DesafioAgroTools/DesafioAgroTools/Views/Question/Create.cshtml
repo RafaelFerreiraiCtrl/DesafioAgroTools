@@ -1,0 +1,51 @@
+﻿@model List<Question>
+@{
+    ViewData["Title"] = "Criar Questões";
+}
+
+<div class="text-center panel panel-primary">
+    <h1 class="display-4 ">Criar Questionario</h1>
+
+    <div class="panel-body">
+
+        @using (Html.BeginForm("Create", "Question", FormMethod.Post))
+        {
+            <div class="form-inline">
+                <div class="form-group col-md-5">
+                    Pergunta
+                    <br />
+                    @Html.TextBox("Description",null, htmlAttributes : new { @class = "form-control", id = "Title" })
+                    <input name="IdQuestion" id="IdQuestion" type="number" hidden value="@ViewBag.IdQuestionary" />
+
+                </div>
+            </div>
+            <br />
+            <br />
+            <div class="btn-group  pull-right">
+                @Html.ActionLink("Voltar", "Index", "Questionary", new { @class = "btn btn-default" })
+                <input type="submit" value="Salvar" class="btn btn-primary" />
+            </div>
+        }
+
+    </div>
+
+
+    <table>
+        <tr>
+            <th>Description</th>
+            <th>Ações</th>
+        </tr>
+        @foreach (var model in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => model.Description)</td>
+                <td>@Html.ActionLink("Excluir", "DeleteQuestion", new { idQuestion = model.Id })</td>
+            </tr>
+        }
+
+    </table>
+
+
+</div>
+
+</div>

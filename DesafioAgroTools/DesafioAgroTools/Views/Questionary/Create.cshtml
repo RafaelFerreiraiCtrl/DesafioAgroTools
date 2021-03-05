@@ -1,0 +1,34 @@
+﻿@model Questionary
+@{
+    ViewData["Title"] = "Criar Questionario";
+}
+
+<div class="text-center panel panel-primary">
+    <h1 class="display-4 ">Criar Questionario</h1>
+
+    <div class="panel-body">
+        @using (Html.BeginForm("Create", "Questionary", FormMethod.Post))
+        {
+            <div class="form-inline">
+                <div class="form-group col-md-5">
+                    Titulo
+                    <br />
+                    @Html.TextBoxFor(model => model.Title, new { @class = "form-control", id = "Title" })
+                </div>
+                <div class="form-group col-md-5">
+                    User
+                    <br />
+                    @Html.TextBoxFor(model => model.User, new { @class = "form-control", id = "User" })
+                </div>
+            </div>
+            <br />
+
+
+            <div class="btn-group pull-right" style="margin-top:30px">
+                @Html.ActionLink("Voltar", "Index", null, new { @class = "btn btn-default" })
+                <input type="submit" value="Salvar" class="btn btn-primary" />
+            </div>
+
+        }
+    </div>
+    </div>

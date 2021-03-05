@@ -1,0 +1,15 @@
+C:\Projetos\2021\TesteAgroTools\DesafioAgroTools\DesafioAgroToolsInfra\bin\Debug\netcoreapp3.1\DesafioAgroToolsInfra.deps.json
+C:\Projetos\2021\TesteAgroTools\DesafioAgroTools\DesafioAgroToolsInfra\bin\Debug\netcoreapp3.1\DesafioAgroToolsInfra.runtimeconfig.json
+C:\Projetos\2021\TesteAgroTools\DesafioAgroTools\DesafioAgroToolsInfra\bin\Debug\netcoreapp3.1\DesafioAgroToolsInfra.runtimeconfig.dev.json
+C:\Projetos\2021\TesteAgroTools\DesafioAgroTools\DesafioAgroToolsInfra\bin\Debug\netcoreapp3.1\DesafioAgroToolsInfra.dll
+C:\Projetos\2021\TesteAgroTools\DesafioAgroTools\DesafioAgroToolsInfra\bin\Debug\netcoreapp3.1\DesafioAgroToolsInfra.pdb
+C:\Projetos\2021\TesteAgroTools\DesafioAgroTools\DesafioAgroToolsInfra\bin\Debug\netcoreapp3.1\DesafioAgroToolsDomain.dll
+C:\Projetos\2021\TesteAgroTools\DesafioAgroTools\DesafioAgroToolsInfra\bin\Debug\netcoreapp3.1\DesafioAgroToolsDomain.pdb
+C:\Projetos\2021\TesteAgroTools\DesafioAgroTools\DesafioAgroToolsInfra\obj\Debug\netcoreapp3.1\DesafioAgroToolsInfra.csprojAssemblyReference.cache
+C:\Projetos\2021\TesteAgroTools\DesafioAgroTools\DesafioAgroToolsInfra\obj\Debug\netcoreapp3.1\DesafioAgroToolsInfra.AssemblyInfoInputs.cache
+C:\Projetos\2021\TesteAgroTools\DesafioAgroTools\DesafioAgroToolsInfra\obj\Debug\netcoreapp3.1\DesafioAgroToolsInfra.AssemblyInfo.cs
+C:\Projetos\2021\TesteAgroTools\DesafioAgroTools\DesafioAgroToolsInfra\obj\Debug\netcoreapp3.1\DesafioAgroToolsInfra.csproj.CoreCompileInputs.cache
+C:\Projetos\2021\TesteAgroTools\DesafioAgroTools\DesafioAgroToolsInfra\obj\Debug\netcoreapp3.1\DesafioAgroToolsInfra.csproj.CopyComplete
+C:\Projetos\2021\TesteAgroTools\DesafioAgroTools\DesafioAgroToolsInfra\obj\Debug\netcoreapp3.1\DesafioAgroToolsInfra.dll
+C:\Projetos\2021\TesteAgroTools\DesafioAgroTools\DesafioAgroToolsInfra\obj\Debug\netcoreapp3.1\DesafioAgroToolsInfra.pdb
+C:\Projetos\2021\TesteAgroTools\DesafioAgroTools\DesafioAgroToolsInfra\obj\Debug\netcoreapp3.1\DesafioAgroToolsInfra.genruntimeconfig.cache
