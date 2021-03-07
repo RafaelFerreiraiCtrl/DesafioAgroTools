@@ -16,6 +16,7 @@ namespace DesafioAgroToolsDomain.Service
         }
         public void Add(Questionary questionary)
         {
+            questionary.Dt_register = DateTime.Now;
             _iQuestionaryRepository.Add(questionary);
             _iQuestionaryRepository.SaveChanges();
         }

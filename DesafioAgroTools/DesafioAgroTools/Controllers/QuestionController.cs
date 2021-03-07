@@ -33,7 +33,7 @@ namespace DesafioAgroTools.Controllers
         {
             var idQuestionary = (int)TempData["IdQuestionary"];
             ViewBag.IdQuestionary = idQuestionary;
-            var questionsAdicionadas = _context.Question.Where(x => x.QuestionId == idQuestionary).ToList();
+            var questionsAdicionadas = _context.Question.Where(x => x.QuestionaryId == idQuestionary).ToList();
             return View(questionsAdicionadas);
         }
 
@@ -46,7 +46,8 @@ namespace DesafioAgroTools.Controllers
             {
                 _context.Add(question);
                 _context.SaveChanges();
-                var questionsAdicionadas = _context.Question.Where(x => x.QuestionId == question.QuestionId).ToList();
+                ViewBag.IdQuestionary = question.QuestionaryId;
+                var questionsAdicionadas = _context.Question.Where(x => x.QuestionaryId == question.QuestionaryId).ToList();
                 return View(questionsAdicionadas);
             }
             catch

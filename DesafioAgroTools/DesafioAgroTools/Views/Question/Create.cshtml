@@ -4,7 +4,7 @@
 }
 
 <div class="text-center panel panel-primary">
-    <h1 class="display-4 ">Criar Questionario</h1>
+    <h1 class="display-4 ">Nova Questão</h1>
 
     <div class="panel-body">
 
@@ -15,14 +15,14 @@
                     Pergunta
                     <br />
                     @Html.TextBox("Description",null, htmlAttributes : new { @class = "form-control", id = "Title" })
-                    <input name="IdQuestion" id="IdQuestion" type="number" hidden value="@ViewBag.IdQuestionary" />
+                    <input name="QuestionaryId" id="QuestionaryId" type="number" hidden value="@ViewBag.IdQuestionary" />
 
                 </div>
             </div>
             <br />
             <br />
             <div class="btn-group  pull-right">
-                @Html.ActionLink("Voltar", "Index", "Questionary", new { @class = "btn btn-default" })
+                @Html.ActionLink("Concluir", "Index", "Questionary", new { @class = "btn btn-default" })
                 <input type="submit" value="Salvar" class="btn btn-primary" />
             </div>
         }
@@ -30,14 +30,14 @@
     </div>
 
 
-    <table>
-        <tr>
+    <table class="table">
+        <tr scope="col">
             <th>Description</th>
             <th>Ações</th>
         </tr>
         @foreach (var model in Model)
         {
-            <tr>
+            <tr scope="row">
                 <td>@Html.DisplayFor(modelItem => model.Description)</td>
                 <td>@Html.ActionLink("Excluir", "DeleteQuestion", new { idQuestion = model.Id })</td>
             </tr>

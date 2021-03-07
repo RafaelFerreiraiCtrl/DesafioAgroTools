@@ -14,7 +14,7 @@ namespace DesafioAgroToolsDomain.Models
         public Question(string description, int questionary)
         {
             Description = description;
-            QuestionId = questionary;
+            QuestionaryId = questionary;
         }
         [Key]
         public int Id { get; set; }
@@ -22,7 +22,7 @@ namespace DesafioAgroToolsDomain.Models
 
 
         [ForeignKey("Questionary")]
-        public int? QuestionId { get; set; }
+        public int? QuestionaryId { get; set; }
         public virtual Questionary Questionary { get; set; }
 
        

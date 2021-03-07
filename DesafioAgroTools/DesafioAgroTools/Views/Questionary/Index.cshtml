@@ -10,15 +10,15 @@
 
     @Html.ActionLink("Adicionar", "Create")
 
-    <table>
+    <table class="table">
         <tr>
-            <th>Nome</th>
-            <th>User</th>
-            <th>Acoes</th>
+            <th scope="col">Nome</th>
+            <th scope="col">User</thscope="col">
+            <th scope="col">Acoes</th>
         </tr>
         @foreach (var model in Model)
         {
-            <tr>
+            <tr scope="row">
                 <td>@Html.DisplayFor(modelItem => model.Title)</td>
                 <td>@Html.DisplayFor(modelItem => model.User)</td>
                 <td>@Html.ActionLink("Responder", "AnswerQuestion", new { idQuestionary = model.Id })</td>
